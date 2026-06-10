@@ -56,57 +56,12 @@ export default function HeroSection() {
         <div className="flex items-center gap-3">
           {/* Декоративная линия + монограмма */}
           <div className="flex items-center gap-2">
-            <svg width="52" height="48" viewBox="0 0 52 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* === Силуэт 1 — девушка смотрит вправо === */}
-              {/* Объёмные волосы сзади */}
-              <path
-                d="M3 8 C1 4 4 1 8 1 C13 1 16 3 17 6 C19 3 18 1 20 2 C22 3 21 6 20 8"
-                stroke="rgb(236,72,153)" strokeWidth="1.1" fill="none" strokeLinecap="round"
-              />
-              {/* Пряди спадающие вниз */}
-              <path
-                d="M3 8 C2 14 2 20 4 26 C5 30 6 34 7 38"
-                stroke="rgb(236,72,153)" strokeWidth="1.1" fill="none" strokeLinecap="round"
-              />
-              <path
-                d="M20 8 C21 13 20 18 18 22 C17 26 16 30 16 34"
-                stroke="rgb(236,72,153)" strokeWidth="1" fill="none" strokeLinecap="round"
-              />
-              {/* Профиль лица (смотрит вправо) */}
-              <path
-                d="M8 8 C6 9 5 11 5 14 C5 17 6 19 7 21 C8 22 8 23 7 25 C9 24 10 23 11 21 C12 22 13 22 14 21 C15 20 15 18 15 16 C15 12 13 9 10 8 Z"
-                stroke="rgb(236,72,153)" strokeWidth="1.1" fill="none" strokeLinecap="round" strokeLinejoin="round"
-              />
-              {/* Нос */}
-              <path d="M14 16 C15 17 15 18 14 19" stroke="rgb(236,72,153)" strokeWidth="0.9" fill="none" strokeLinecap="round"/>
-              {/* Шея */}
-              <path d="M9 25 C9 28 10 31 10 33" stroke="rgb(236,72,153)" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
-
-              {/* === Силуэт 2 — девушка смотрит влево, чуть позади === */}
-              {/* Объёмные волосы сзади */}
-              <path
-                d="M32 6 C30 2 33 0 37 0 C42 0 46 2 48 5 C50 2 49 0 51 1 C52 3 51 5 50 7"
-                stroke="rgb(216,180,254)" strokeWidth="1.1" fill="none" strokeLinecap="round"
-              />
-              {/* Пряди спадающие вниз */}
-              <path
-                d="M32 7 C31 13 31 20 33 26 C34 30 35 34 36 38"
-                stroke="rgb(216,180,254)" strokeWidth="1.1" fill="none" strokeLinecap="round"
-              />
-              <path
-                d="M50 7 C51 12 50 18 48 23 C47 27 46 31 46 35"
-                stroke="rgb(216,180,254)" strokeWidth="1" fill="none" strokeLinecap="round"
-              />
-              {/* Профиль лица (смотрит влево) */}
-              <path
-                d="M43 7 C45 8 46 10 46 13 C46 16 45 19 44 20 C43 22 43 23 44 25 C42 24 41 23 40 21 C39 22 38 22 37 21 C36 20 36 18 36 15 C36 11 38 8 41 7 Z"
-                stroke="rgb(216,180,254)" strokeWidth="1.1" fill="none" strokeLinecap="round" strokeLinejoin="round"
-              />
-              {/* Нос */}
-              <path d="M37 15 C36 16 36 17 37 18" stroke="rgb(216,180,254)" strokeWidth="0.9" fill="none" strokeLinecap="round"/>
-              {/* Шея */}
-              <path d="M42 25 C42 28 41 31 41 33" stroke="rgb(216,180,254)" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
-            </svg>
+            <img
+              src="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/bucket/90650b5f-2ef7-40c3-b2ac-92b759b63fcc.png"
+              alt="Два женских силуэта"
+              className="h-12 md:h-14 w-auto object-contain"
+              style={{ mixBlendMode: "screen" }}
+            />
             {/* Вертикальный разделитель */}
             <div className="w-px h-10 bg-pink-400/70" />
           </div>
