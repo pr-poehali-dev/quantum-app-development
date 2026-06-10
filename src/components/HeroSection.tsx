@@ -12,12 +12,12 @@ export default function HeroSection() {
       alt: "Студия перманентного макияжа",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-oH2K0gw1HEqvYhhbwJrYbmkBrbksyk.png",
-      alt: "Парикмахерские услуги",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/3098f001-ae35-4de9-b172-2d429a92d627.jpg",
+      alt: "Перманентный макияж глаз",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DQ2brNc5Vszxllx17YNA6JqGqiHaRm.png",
-      alt: "Студия красоты",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/40703f59-dcaf-4616-8f85-958e0779a742.jpg",
+      alt: "Окрашивание и стрижка",
     },
   ]
 
