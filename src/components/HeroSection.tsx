@@ -8,28 +8,27 @@ export default function HeroSection() {
 
   const slides = [
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-j46TPXDHzpn3M65wMva3qHPNhwokYn.png",
-      alt: "Группа бегунов в движении",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/0f084e41-630d-4640-8148-9b200bae7082.jpg",
+      alt: "Студия перманентного макияжа",
     },
     {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-oH2K0gw1HEqvYhhbwJrYbmkBrbksyk.png",
-      alt: "Бегунья с эффектом размытия",
+      alt: "Парикмахерские услуги",
     },
     {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DQ2brNc5Vszxllx17YNA6JqGqiHaRm.png",
-      alt: "Бегун во главе группы",
+      alt: "Студия красоты",
     },
   ]
 
   const navItems = [
     { name: "Главная", href: "#hero" },
-    { name: "Миссия", href: "#mission" },
-    { name: "Сообщество", href: "#community" },
+    { name: "О нас", href: "#mission" },
+    { name: "Услуги", href: "#community" },
     { name: "Отзывы", href: "#testimonials" },
-    { name: "Вступить", href: "#join" },
+    { name: "Записаться", href: "#join" },
   ]
 
-  // Navigation handlers
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length)
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
 
@@ -43,39 +42,36 @@ export default function HeroSection() {
 
   return (
     <div id="hero" className="relative h-screen w-full overflow-hidden bg-black">
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
         style={{
           backgroundImage: `url('${slides[currentSlide].image}')`,
         }}
       >
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Navigation */}
       <nav className="relative z-20 flex items-center justify-between p-6 md:p-8">
-        {/* Logo/Brand */}
-        <div className="text-white font-bold text-xl tracking-wider">STRIDE</div>
+        <div className="text-white font-bold text-xl tracking-widest" style={{ fontFamily: "var(--font-serif)" }}>
+          BEAUTY STUDIO
+        </div>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <button
               key={item.name}
               onClick={() => scrollToSection(item.href)}
-              className="relative text-white hover:text-gray-300 transition-colors duration-300 font-medium tracking-wide pb-1 group"
+              className="relative text-white hover:text-pink-300 transition-colors duration-300 font-medium tracking-wide pb-1 group"
             >
               {item.name}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-out group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 ease-out group-hover:w-full"></span>
             </button>
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white hover:text-gray-300 transition-colors"
+          className="md:hidden text-white hover:text-pink-300 transition-colors"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -83,15 +79,14 @@ export default function HeroSection() {
         </button>
       </nav>
 
-      {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="absolute top-0 left-0 w-full h-full bg-black/90 z-30 md:hidden">
+        <div className="absolute top-0 left-0 w-full h-full bg-black/95 z-30 md:hidden">
           <div className="flex flex-col items-center justify-center h-full space-y-8">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-white text-2xl font-bold tracking-wider hover:text-gray-300 transition-colors duration-300"
+                className="text-white text-2xl font-bold tracking-wider hover:text-pink-300 transition-colors duration-300"
               >
                 {item.name}
               </button>
@@ -103,23 +98,28 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-6">
         <div className="text-center text-white max-w-4xl">
-          {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-wider mb-4 leading-none">
-            STRIDE
+          <p className="text-sm md:text-base font-light tracking-[0.3em] mb-4 text-pink-300 uppercase">
+            Студия красоты
+          </p>
+          <h1
+            className="text-5xl md:text-7xl lg:text-8xl font-light tracking-wider mb-4 leading-tight"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            Красота —
             <br />
-            COLLECTIVE
+            <span style={{ color: "hsl(322, 70%, 72%)" }}>это искусство</span>
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl font-light tracking-wide mb-8 text-gray-200">Беговое сообщество</p>
+          <p className="text-lg md:text-xl font-light tracking-wide mb-10 text-gray-200">
+            Перманентный макияж бровей, губ и глаз · Парикмахерские услуги
+          </p>
 
-          {/* CTA Button - Now using LiquidButton */}
           <LiquidButton
             size="xxl"
             className="font-semibold text-lg tracking-wide"
             onClick={() => scrollToSection("#join")}
           >
-            Присоединиться
+            Записаться на приём
           </LiquidButton>
         </div>
       </div>
@@ -127,33 +127,30 @@ export default function HeroSection() {
       {/* Slider Navigation */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
         <div className="flex items-center space-x-4">
-          {/* Previous Arrow */}
           <button
             onClick={prevSlide}
-            className="text-white hover:text-gray-300 transition-colors p-2"
+            className="text-white hover:text-pink-300 transition-colors p-2"
             aria-label="Предыдущий слайд"
           >
             <ChevronLeft size={24} />
           </button>
 
-          {/* Slide Indicators */}
           <div className="flex space-x-2">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  currentSlide === index ? "bg-white" : "bg-white/40 hover:bg-white/60"
+                  currentSlide === index ? "bg-pink-400" : "bg-white/40 hover:bg-white/60"
                 }`}
                 aria-label={`Перейти к слайду ${index + 1}`}
               />
             ))}
           </div>
 
-          {/* Next Arrow */}
           <button
             onClick={nextSlide}
-            className="text-white hover:text-gray-300 transition-colors p-2"
+            className="text-white hover:text-pink-300 transition-colors p-2"
             aria-label="Следующий слайд"
           >
             <ChevronRight size={24} />
@@ -161,7 +158,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Side Navigation Indicators */}
       <div className="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 hidden md:block">
         <div className="flex flex-col space-y-3">
           {slides.map((_, index) => (
@@ -169,7 +165,7 @@ export default function HeroSection() {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-1 h-8 transition-all duration-300 ${
-                currentSlide === index ? "bg-white" : "bg-white/40 hover:bg-white/60"
+                currentSlide === index ? "bg-pink-400" : "bg-white/40 hover:bg-white/60"
               }`}
               aria-label={`Слайд ${index + 1}`}
             />

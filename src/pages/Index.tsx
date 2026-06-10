@@ -7,34 +7,34 @@ import SmoothScrollHero from "@/components/ui/smooth-scroll-hero"
 
 export default function Index() {
   const missionStatement =
-    "В Stride Collective мы верим: движение — это не просто выбор, это образ жизни. Рожденные из духа бегового сообщества, мы объединяем бегунов со всего мира, которых связывает страсть к преодолению границ. Бежишь ли ты навстречу рассвету по городским улицам или покоряешь горные тропы — мы здесь, чтобы вдохновлять тебя. Наше сообщество живет ритмом шагов, силой упорства и радостью общих побед. Присоединяйся к нам — беги не только ради формы, но ради свободы, дружбы и чистой любви к движению."
+    "Мы верим: каждая женщина достойна просыпаться красивой. Наша студия создаёт естественный перманентный макияж бровей, губ и глаз, который подчёркивает вашу индивидуальность. Здесь работают мастера с душой — мы не рисуем маски, мы раскрываем вашу настоящую красоту. Каждая процедура — это диалог, забота и результат, которым вы будете гордиться каждое утро."
 
   const timelineEntries = [
     {
       id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RJ3iTXUn5SUexF6nHMZYhMoQLNCboK.png",
-      alt: "Бегунья в художественном размытии движения",
-      title: "Каждый шаг важен",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/0f084e41-630d-4640-8148-9b200bae7082.jpg",
+      alt: "Перманентный макияж бровей",
+      title: "Перманент бровей",
       description:
-        "От первой пробежки вокруг дома до сотого марафона — у каждого бегуна своя история. В Stride Collective мы чествуем новичков, которые впервые шнуруют кроссовки. Твой темп не важен — важна твоя страсть. Чего ты ждешь?",
+        "Пудровые брови, волосковая техника, акварельные брови — подбираем форму и технику индивидуально под ваш тип лица. Результат держится до 2–3 лет. Никакого «татуажного» вида — только естественная красота с первого дня.",
       layout: "left" as const,
     },
     {
       id: 2,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LN9OPh9hw0b9rwSPRSslHoejcfoKHe.png",
-      alt: "Бегун с решимостью и концентрацией",
-      title: "Найди свой ритм",
+      alt: "Перманентный макияж губ и глаз",
+      title: "Перманент губ и глаз",
       description:
-        "Гонишься за личными рекордами или просто встречаешь рассвет на бегу — наше сообщество принимает каждого. От спринтеров до любителей медленного бега, от трейлраннеров до звезд стадиона — здесь найдется место для тебя. Вопрос один: чего ты ждешь?",
+        "Акварельные губы, стрелки, межресничный татуаж — процедуры, которые экономят ваше время каждое утро. Пигменты премиум-класса, безопасные составы и деликатная работа мастера гарантируют результат, которым вы влюбитесь.",
       layout: "right" as const,
     },
     {
       id: 3,
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1FdGyjVpWQANGzsDWpoPIvF5SVI2za.png",
-      alt: "Бегун в динамике, демонстрирующий силу и грацию",
-      title: "Стань частью движения",
+      alt: "Парикмахерские услуги",
+      title: "Парикмахерские услуги",
       description:
-        "Бег — это не только километры, это моменты. Утренние разговоры, общие трудности, коллективные победы. В Stride Collective ты вступаешь не просто в группу — ты становишься частью семьи. Зашнуруй кроссовки, выйди на старт и открой, на что ты способен. Серьезно, чего ты ждешь?",
+        "Стрижки, окрашивание, уходовые процедуры и укладки — полный спектр услуг для ваших волос. Мы работаем с профессиональной косметикой и следим за трендами, чтобы вы всегда выглядели безупречно.",
       layout: "left" as const,
     },
   ]
@@ -44,17 +44,22 @@ export default function Index() {
       {/* Hero Section */}
       <HeroSection />
 
-      {/* Mission Statement Section with Grid Background */}
+      {/* Mission Statement Section */}
       <section id="mission" className="relative min-h-screen flex items-center justify-center py-20 bg-white">
-        {/* Subtle Grid Pattern */}
-        <div className="absolute inset-0 bg-grid-subtle opacity-30 pointer-events-none" />
+        <div className="absolute inset-0 bg-grid-subtle opacity-20 pointer-events-none" />
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-12 text-gray-900">НАША МИССИЯ</h2>
+            <p className="text-sm font-medium tracking-[0.3em] text-pink-500 mb-4 uppercase">Наша философия</p>
+            <h2
+              className="text-4xl md:text-6xl font-light tracking-wider mb-12 text-gray-900"
+              style={{ fontFamily: "var(--font-serif)" }}
+            >
+              О студии
+            </h2>
             <TextGradientScroll
               text={missionStatement}
-              className="text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-gray-800"
+              className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed text-gray-800"
               type="word"
               textOpacity="soft"
             />
@@ -62,17 +67,22 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* Services / Timeline Section */}
       <section id="community" className="relative py-20 bg-white">
-        {/* Subtle Grid Pattern */}
-        <div className="absolute inset-0 bg-grid-subtle opacity-30 pointer-events-none" />
+        <div className="absolute inset-0 bg-grid-subtle opacity-20 pointer-events-none" />
 
         <div className="relative z-10">
           <div className="container mx-auto px-6 mb-16">
             <div className="text-center">
-              <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-6 text-gray-900">МЫ РАДЫ КАЖДОМУ</h2>
-              <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-                У каждого бегуна свой путь. Вот лишь несколько историй из нашего открытого сообщества.
+              <p className="text-sm font-medium tracking-[0.3em] text-pink-500 mb-4 uppercase">Что мы делаем</p>
+              <h2
+                className="text-4xl md:text-6xl font-light tracking-wider mb-6 text-gray-900"
+                style={{ fontFamily: "var(--font-serif)" }}
+              >
+                Наши услуги
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-500 max-w-3xl mx-auto">
+                Каждая процедура — это индивидуальный подход и забота о вашей красоте.
               </p>
             </div>
           </div>
@@ -83,8 +93,7 @@ export default function Index() {
 
       {/* Testimonials Section */}
       <section id="testimonials" className="relative py-20 bg-white">
-        {/* Subtle Grid Pattern */}
-        <div className="absolute inset-0 bg-grid-subtle opacity-30 pointer-events-none" />
+        <div className="absolute inset-0 bg-grid-subtle opacity-20 pointer-events-none" />
 
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
@@ -94,12 +103,16 @@ export default function Index() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-6xl font-black tracking-wider text-gray-900 mb-6">
+            <p className="text-sm font-medium tracking-[0.3em] text-pink-500 mb-4 uppercase">Мнения клиентов</p>
+            <h2
+              className="text-4xl md:text-6xl font-light tracking-wider text-gray-900 mb-6"
+              style={{ fontFamily: "var(--font-serif)" }}
+            >
               Что говорят наши{" "}
-              <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">БЕГУНЫ</span>
+              <span className="bg-gradient-to-r from-pink-500 to-pink-300 bg-clip-text text-transparent">гости</span>
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-              Реальные истории от реальных бегунов, которые нашли свой ритм вместе со Stride Collective.
+            <p className="text-xl md:text-2xl text-gray-500 max-w-3xl mx-auto leading-relaxed mb-12">
+              Реальные отзывы клиентов, которые уже открыли для себя искусство перманентного макияжа.
             </p>
           </motion.div>
 
@@ -107,12 +120,12 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Smooth Scroll Hero with CTA Overlay */}
+      {/* Final CTA with parallax */}
       <section id="join" className="relative">
         <SmoothScrollHero
           scrollHeight={2500}
-          desktopImage="/images/runners-motion-blur.png"
-          mobileImage="/images/runners-motion-blur.png"
+          desktopImage="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/0f084e41-630d-4640-8148-9b200bae7082.jpg"
+          mobileImage="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/0f084e41-630d-4640-8148-9b200bae7082.jpg"
           initialClipPercentage={30}
           finalClipPercentage={70}
         />
