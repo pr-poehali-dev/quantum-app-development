@@ -12,7 +12,7 @@ export default function Index() {
   const timelineEntries = [
     {
       id: 1,
-      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/0f084e41-630d-4640-8148-9b200bae7082.jpg",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/2d0771a3-5364-44d4-acae-485fd31022c1.jpg",
       alt: "Перманентный макияж бровей",
       title: "Перманент бровей",
       description:
@@ -21,7 +21,7 @@ export default function Index() {
     },
     {
       id: 2,
-      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/c06c03b5-3769-4ee2-b0ab-f71bb888868d.jpg",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/6d7767b6-b71b-493a-bd4c-4a24ee6f6dbd.jpg",
       alt: "Перманентный макияж губ и глаз",
       title: "Перманент губ и глаз",
       description:
@@ -30,7 +30,7 @@ export default function Index() {
     },
     {
       id: 3,
-      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/a1df1aa2-851f-422f-8527-4a0320f6c1d0.jpg",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/c3657608-513f-4eae-8ba2-d1f467163013.jpg",
       alt: "Парикмахерские услуги",
       title: "Парикмахерские услуги",
       description:
@@ -124,8 +124,8 @@ export default function Index() {
       <section id="join" className="relative">
         <SmoothScrollHero
           scrollHeight={2500}
-          desktopImage="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/e2f89806-e3cb-42d8-8f66-d39591346c35.jpg"
-          mobileImage="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/e2f89806-e3cb-42d8-8f66-d39591346c35.jpg"
+          desktopImage="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/98c75f2c-0460-42a6-a185-b9ba8f2c061e.jpg"
+          mobileImage="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/98c75f2c-0460-42a6-a185-b9ba8f2c061e.jpg"
           initialClipPercentage={30}
           finalClipPercentage={70}
         />

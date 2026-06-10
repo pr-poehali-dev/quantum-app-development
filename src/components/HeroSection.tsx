@@ -8,16 +8,16 @@ export default function HeroSection() {
 
   const slides = [
     {
-      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/0f084e41-630d-4640-8148-9b200bae7082.jpg",
-      alt: "Студия перманентного макияжа",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/98c75f2c-0460-42a6-a185-b9ba8f2c061e.jpg",
+      alt: "Перманентный макияж бровей",
     },
     {
-      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/3098f001-ae35-4de9-b172-2d429a92d627.jpg",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/605deaea-1842-410a-88eb-a450338c4bf2.jpg",
       alt: "Перманентный макияж глаз",
     },
     {
-      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/40703f59-dcaf-4616-8f85-958e0779a742.jpg",
-      alt: "Окрашивание и стрижка",
+      image: "https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/files/c3657608-513f-4eae-8ba2-d1f467163013.jpg",
+      alt: "Парикмахерские услуги",
     },
   ]
 
