@@ -57,7 +57,7 @@ export default function HeroSection() {
           src="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/bucket/a7adfb22-315e-4971-8c03-3a9cfad67753.png"
           alt="Стилист Технолог"
           className="h-14 md:h-16 object-contain"
-          style={{ filter: "drop-shadow(0 1px 6px rgba(0,0,0,0.6)) drop-shadow(0 0px 12px rgba(255,255,255,0.15))" }}
+          style={{ mixBlendMode: "screen", filter: "drop-shadow(0 1px 4px rgba(0,0,0,0.3))" }}
         />
 
         <div className="hidden md:flex items-center space-x-8">
