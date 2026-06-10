@@ -53,9 +53,11 @@ export default function HeroSection() {
 
       {/* Navigation */}
       <nav className="relative z-20 flex items-center justify-between p-6 md:p-8">
-        <div className="text-white font-bold text-xl tracking-widest" style={{ fontFamily: "var(--font-serif)" }}>
-          BEAUTY STUDIO
-        </div>
+        <img
+          src="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/bucket/a7adfb22-315e-4971-8c03-3a9cfad67753.png"
+          alt="Стилист Технолог"
+          className="h-14 md:h-16 object-contain drop-shadow-lg brightness-0 invert"
+        />
 
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
