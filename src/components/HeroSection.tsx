@@ -60,7 +60,7 @@ export default function HeroSection() {
               src="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/bucket/90650b5f-2ef7-40c3-b2ac-92b759b63fcc.png"
               alt="Два женских силуэта"
               className="h-12 md:h-14 w-auto object-contain"
-              style={{ mixBlendMode: "screen" }}
+              style={{ filter: "brightness(0) invert(1) drop-shadow(0 0 6px rgba(236,72,153,0.6))" }}
             />
             {/* Вертикальный разделитель */}
             <div className="w-px h-10 bg-pink-400/70" />
