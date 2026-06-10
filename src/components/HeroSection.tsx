@@ -53,12 +53,54 @@ export default function HeroSection() {
 
       {/* Navigation */}
       <nav className="relative z-20 flex items-center justify-between p-6 md:p-8">
-        <img
-          src="https://cdn.poehali.dev/projects/e7e6ab4d-81f6-40a4-9d4d-b6c3632be3a7/bucket/a7adfb22-315e-4971-8c03-3a9cfad67753.png"
-          alt="Стилист Технолог"
-          className="h-14 md:h-16 object-contain"
-          style={{ mixBlendMode: "screen", filter: "drop-shadow(0 1px 4px rgba(0,0,0,0.3))" }}
-        />
+        <div className="flex items-center gap-3">
+          {/* Декоративная линия + монограмма */}
+          <div className="flex items-center gap-2">
+            <svg width="36" height="44" viewBox="0 0 36 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Силуэт женского лица — линейный */}
+              <path
+                d="M18 4 C12 4 8 8 8 14 C8 18 9 21 11 23 C11 26 10 28 8 30 C12 29 14 27 15 25 C16 25.5 17 26 18 26 C19 26 20 25.5 21 25 C22 27 24 29 28 30 C26 28 25 26 25 23 C27 21 28 18 28 14 C28 8 24 4 18 4Z"
+                stroke="rgb(236,72,153)"
+                strokeWidth="1.2"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              {/* Волосы */}
+              <path
+                d="M10 13 C9 7 13 2 18 2 C23 2 27 7 26 13"
+                stroke="rgb(236,72,153)"
+                strokeWidth="1.2"
+                fill="none"
+                strokeLinecap="round"
+              />
+              <path
+                d="M15 25 C15 30 16 35 18 40 C20 35 21 30 21 25"
+                stroke="rgb(236,72,153)"
+                strokeWidth="1"
+                fill="none"
+                strokeLinecap="round"
+              />
+            </svg>
+            {/* Вертикальный разделитель */}
+            <div className="w-px h-10 bg-pink-400/70" />
+          </div>
+          {/* Текстовая часть */}
+          <div className="flex flex-col leading-none">
+            <span
+              className="text-white text-lg md:text-xl font-semibold tracking-[0.2em] uppercase"
+              style={{ fontFamily: "var(--font-serif)", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}
+            >
+              Стилист
+            </span>
+            <span
+              className="text-pink-300 text-sm md:text-base font-light tracking-[0.35em] uppercase"
+              style={{ fontFamily: "var(--font-serif)", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}
+            >
+              Технолог
+            </span>
+          </div>
+        </div>
 
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
